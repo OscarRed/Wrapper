@@ -20,7 +20,7 @@ public class PluginUtility {
             targetFile.delete();
             Bukkit.getLogger().log(Level.INFO, "Plugin successfully enabled!");
         } catch (InvalidDescriptionException | InvalidPluginException e) {
-            Bukkit.getLogger().log(Level.SEVERE, "Unable to load plugin into server!");
+            Bukkit.getLogger().log(Level.SEVERE, "Unable to enable plugin on server!");
             e.printStackTrace();
         }
     }
